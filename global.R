@@ -1,7 +1,15 @@
 library(shiny)
+library(ggplot2)        # For plots 
+library(plotly)        
+library(RColorBrewer)   # For colour palettes
+library(shinyBS)        # For modals 
 library(leaflet)        # For GIS
 library(rgdal)          
-library(SPARQL)         # To return data from API
+library(jsonlite)       # For help boxes
+library(shinyjs)      
+library(plyr)           # For data processing 
+library(reshape2)  
+library(SPARQL)         # To return data from API     # To return data from API
 
 SparqlDataEndpoint <- 'http://statistics.gov.scot/sparql.csv'
 SparqlDataQuery <- 'PREFIX qb: <http://purl.org/linked-data/cube#>
